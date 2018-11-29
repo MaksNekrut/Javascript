@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        /*var login = prompt ("Введите логин");
+if (login==="Админ") {
+    var pass = prompt("введите пароль");
+    pass == NaN ? alert("Добро пожаловать"):alert("Введите числовой пароль");
+} else {
+    alert("Я вас не знаю");
+};*/
+
+
+//Из трех данных чисел выбрать наименьшее.
+
+var x = 0;
+var y = 275;
+var z = -7158;
+  if (x<y && x<z) {
+      console.log((x) + "- наименьшее из трех данных чисел");
+  } else if (y<z) {
+    console.log((y) + "- наименьшее из трех данных чисел");
+  } else {
+    console.log((z) + "- наименьшее из трех данных чисел");
+  };
+
+/*
+Дано целое число в диапазоне 1 - 5. 
+Вывести 
+строку - словесное описание соответствующей 
+оценки 
+(1 - "плохо", 
+2 - "неудовлетворительно", 
+
+3 - "удовлетворительно", 
+4 - "хорошо", 
+5 - "отлично").*/
+
+var number = prompt ("Введите число от 1 до 5");
+  switch (number) {
+    case '1':
+        console.log("Плохо");
+        break;
+    case '2':
+        console.log("Неудовлетворительно");
+        break;
+    case '3':
+        console.log("Удовлетворительно");
+        break;
+    case '4':
+        console.log("Хорошо");
+        break;
+    case '5':
+        console.log("Отлично");
+        break;
+    default:
+        console.log("Значение не входит в заданный диапазон")
+  };
+
+  /*3. 
+Дано целое число в диапазоне 
+0 - 9. 
+
+Вывести строку - название соответствующей цифры 
+на русском языке 
+(0 - "ноль", 1 - "один", 2 - "два", ...).
+*/
+var x = prompt("Введите число от 0 до 9")
+var value = parseInt(x);
+var numbers = ["ноль","один","Два","Три","Четыре","Пять","Шесть","Семь","Восемь","Девять"];
+    if (value<0 || value>9) {
+        console.log("Error");
+    } else {
+        for (i=0;i<numbers.length;i++) {
+        if (value === i) {
+            console.log(numbers[i]);
+             }; 
+        }; 
+    };
+     
+
+    /*4.
+ Дано целое число, лежащее в диапазоне от -999 до 999. 
+
+Вывести строку - словесное описание данного числа вида 
+
+"отрицательное двузначное число", 
+"нулевое число", 
+
+"положительное однозначное число" и т.д.
+*/
+
+var count = prompt("Введите число от -999 до 999");
+var countNumber = parseInt(count);
+  if (countNumber >-1000 && countNumber <=-100) {
+      console.log("Отрицательное трехзначное число");
+  } else if (countNumber>-100 && countNumber<-9) {
+      console.log("Отрицательное двухзначное число");
+  } else if (countNumber>-9 && countNumber<-1) {
+      console.log("Отрицательное однозначное число");
+  } else if (countNumber === 0) {
+      console.log("Нулевое число");
+  } else if (countNumber>0 && countNumber<10) {
+      console.log("Положительное однозначное число");
+  } else if (countNumber>9 && countNumber<100) {
+      console.log("Положительное двухзначное число");
+  } else if (countNumber>=100 && countNumber<1000) {
+      console.log("Положительное трехзначное число");
+  } else {
+      console.log("Error");
+  };
+   
+/*5.
+Проверить истинность высказывания: 
+
+"Среди трех данных целых чисел есть хоть 
+бы одна пара совпадающих".
+
+Требуется вывести логическое значение True, 
+если 
+приведенное высказывание для предложенных исходных 
+данных 
+является истинным, и значение False в противном случае.
+*/
+
+  var firstNumber = prompt("Enter first number");
+  var secondNumber = prompt("Enter second number");
+  var thirdNumber = prompt("Enter third number");
+
+  var result = firstNumber === secondNumber || firstNumber === thirdNumber || secondNumber === thirdNumber ;
+  console.log(result);
+  
+
+    </script>
+</body>
+</html>
