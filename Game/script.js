@@ -59,12 +59,12 @@
               div_gamePlace.appendChild(newGame);
               newGame.style.fontSize = "35px";
         
-
         let gambler1 = document.createElement('h2');
         let textGambler1 = document.createTextNode('Gambler 1');
               gambler1.appendChild(textGambler1);
               gambler1.style.float = "left";
               gambler1.style.textAlign = "center";
+              gambler1.style.color = "#2E8B57";
               gambler1.style.display = "inline";
               gambler1.style.fontSize = "40px";
               gambler1.style.display = "none";
@@ -78,6 +78,7 @@
               gambler2.appendChild(textGambler2);
               gambler2.style.float = "left";
               gambler2.style.textAlign = "center";
+              gambler2.style.color = "#2E8B57";
               gambler2.style.display = "inline";
               gambler2.style.display = "none";
               gambler2.style.fontSize = "40px";
@@ -86,8 +87,7 @@
               gambler2.style.borderRadius = "20%";
               gambler2.style.border = "2px solid green";
               gambler2.style.background = "linear-gradient(45deg, #85FFBD, #FFFB7D, #FFFFFF)";
-        
-        
+            
         let result_score1 = document.createElement('h1');
         let textResultScore1 = document.createTextNode('0');
               result_score1.appendChild(textResultScore1);
@@ -417,8 +417,8 @@
                      score2.style.background = "linear-gradient(45deg, #85FFBD, #FFFB7D, #FFFFFF)";
                      p_score2.style.background = "linear-gradient(45deg, #85FFBD, #FFFB7D, #FFFFFF)";
               
-        }
- };
+              }
+       };
 
        function gift() {
               let bonus = document.createElement('div');
